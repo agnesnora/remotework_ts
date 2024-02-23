@@ -25,7 +25,7 @@ export const Navbar: FC<NavbarProps> = () => {
     <Menu>
       <MenuButton onClick={handleFeatureClick}>Features</MenuButton>
       <MenuDropdown isFeatureOn={isFeatureOn}>
-        <ul>
+        <ul data-testid="features-dropdown">
           {featuresArray.map((feature) => (
             <MenuItem key={feature.text}>
               <li>
@@ -38,7 +38,7 @@ export const Navbar: FC<NavbarProps> = () => {
       </MenuDropdown>
       <MenuButton onClick={handleCompanyClick}>Company</MenuButton>
       <MenuDropdown isFeatureOn={isCompanyOn}>
-        <ul>
+        <ul data-testid="company-dropdown">
           {companyArray.map((item) => (
             <MenuItem key={item.text}>
               <li>
