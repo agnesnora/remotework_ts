@@ -8,10 +8,15 @@ import { FC } from "react";
 interface ButtonProps {
   onClick: () => void;
   children: ReactNode;
+  className: string;
 }
 
-const Button: FC<ButtonProps> = (props) => {
-  return <button {...props}>{props.children}</button>;
+const Button: FC<ButtonProps> = ({ onClick, children, className }) => {
+  return (
+    <button onClick={onClick} className={className}>
+      {children}
+    </button>
+  );
 };
 
 export { Button };

@@ -23,7 +23,6 @@ interface NavbarProps {
 export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
   const [isFeatureOn, setFeatureOn] = useState<boolean>(false);
   const [isCompanyOn, setCompanyOn] = useState<boolean>(false);
-  // const [isNavbarOn, setIsNavbarOn] = useState<boolean>(true);
 
   const handleFeatureClick = () => {
     setFeatureOn((prevOn) => !prevOn);
