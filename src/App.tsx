@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { DropdownButton } from "./components/DropdownButton/DropdownButton";
 import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
