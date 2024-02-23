@@ -1,13 +1,24 @@
 .hero .hero--img {
   width: 100%;
 }
-.hero button {
-  background-color: rgb(0, 0, 0);
+.hero .hero--content {
+  margin: 2rem 1rem;
   text-align: center;
+}
+.hero .hero--content h1 {
+  margin-top: 2em;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+.hero .hero--content p {
+  color: 686868;
+  line-height: 1.5;
+}
+.hero .hero--content button {
+  background-color: rgb(0, 0, 0);
   margin: 0 auto;
   display: block;
   color: #fafafa;
   padding: 1.2em 1.5em;
   font-weight: bold;
-  /* Group 7 */
 }/*# sourceMappingURL=MainSection.css.map */

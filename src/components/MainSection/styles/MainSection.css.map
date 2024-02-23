@@ -1,1 +1,1 @@
-{"version":3,"sources":["MainSection.scss","MainSection.css"],"names":[],"mappings":"AACE;EACE,WAAA;ACAJ;ADEE;EACE,8BAAA;EACA,kBAAA;EACA,cAAA;EACA,cAAA;EACA,cAAA;EACA,oBAAA;EACA,iBAAA;EAEA,YAAA;ACDJ","file":"MainSection.css"}
+{"version":3,"sources":["MainSection.scss","MainSection.css"],"names":[],"mappings":"AACE;EACE,WAAA;ACAJ;ADEE;EACE,iBAAA;EACA,kBAAA;ACAJ;ADCI;EACE,eAAA;EACA,gBAAA;EACA,iBAAA;ACCN;ADCI;EACE,aAAA;EACA,gBAAA;ACCN;ADCI;EACE,8BAAA;EACA,cAAA;EACA,cAAA;EACA,cAAA;EACA,oBAAA;EACA,iBAAA;ACCN","file":"MainSection.css"}
