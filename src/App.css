@@ -22,12 +22,15 @@ button {
 }
 
 .company--list {
-  margin: 3em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 1em;
+  margin: 0 auto;
   text-align: center;
-  display: flex;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
+  padding: 0 2em;
 }
 .company--list img {
-  margin: 0 1em;
+  max-width: 50px;
 }/*# sourceMappingURL=App.css.map */
