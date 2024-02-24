@@ -20,12 +20,22 @@
 }
 .navbar--container .menu--container button {
   background-color: transparent;
+  color: #686868;
   border: none;
   line-height: 1.625;
   margin-bottom: 1.2em;
   font-size: 1rem;
   display: block;
 }
+.navbar--container .menu--container .dropdown--btn {
+  display: flex;
+  align-items: center;
+}
+
+.arrow--icon {
+  margin-left: 0.5em;
+}
+
 .action--btn {
   display: block;
   margin: 1em auto;

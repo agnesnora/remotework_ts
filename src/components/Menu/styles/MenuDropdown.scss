@@ -1,0 +1,19 @@
+@import "../../../help/variables.scss";
+
+.menu--dropdown {
+  ul {
+    list-style-type: none;
+    font-family: $fontFamily;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0.7em;
+
+      a {
+        text-decoration: none;
+        color: $mediumGrey;
+        margin-left: 0.7em;
+      }
+    }
+  }
+}

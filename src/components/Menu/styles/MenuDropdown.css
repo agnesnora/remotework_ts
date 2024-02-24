@@ -1,0 +1,14 @@
+.menu--dropdown ul {
+  list-style-type: none;
+  font-family: "Epilogue", sans-serif;
+}
+.menu--dropdown ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.7em;
+}
+.menu--dropdown ul li a {
+  text-decoration: none;
+  color: #686868;
+  margin-left: 0.7em;
+}/*# sourceMappingURL=MenuDropdown.css.map */

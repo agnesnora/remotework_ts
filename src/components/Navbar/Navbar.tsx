@@ -45,12 +45,16 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
         <MenuButton onClick={handleFeatureClick}>
           Feature{" "}
           {isFeatureOn ? (
-            <MdOutlineKeyboardArrowUp />
+            <MdOutlineKeyboardArrowUp className="arrow--icon" />
           ) : (
-            <MdOutlineKeyboardArrowDown />
+            <MdOutlineKeyboardArrowDown className="arrow--icon" />
           )}
         </MenuButton>
-        <MenuDropdown data-testid="dropdown" isFeatureOn={isFeatureOn}>
+        <MenuDropdown
+          className="menu--dropdown"
+          data-testid="dropdown"
+          isFeatureOn={isFeatureOn}
+        >
           <ul data-testid="features-dropdown">
             {featuresArray.map((feature) => (
               <MenuItem key={feature.text}>
@@ -65,12 +69,12 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
         <MenuButton onClick={handleCompanyClick}>
           Company{" "}
           {isCompanyOn ? (
-            <MdOutlineKeyboardArrowUp />
+            <MdOutlineKeyboardArrowUp className="arrow--icon" />
           ) : (
-            <MdOutlineKeyboardArrowDown />
+            <MdOutlineKeyboardArrowDown className="arrow--icon" />
           )}
         </MenuButton>
-        <MenuDropdown isCompanyOn={isCompanyOn}>
+        <MenuDropdown className="menu--dropdown" isCompanyOn={isCompanyOn}>
           <ul data-testid="company-dropdown">
             {companyArray.map((item) => (
               <MenuItem key={item.text}>
