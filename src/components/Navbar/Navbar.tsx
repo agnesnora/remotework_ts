@@ -1,3 +1,5 @@
+import "./styles/Navbar.css";
+
 import { Menu } from "../Menu/Menu";
 import { MenuButton } from "../Menu/MenuButton";
 import { useState } from "react";
@@ -36,10 +38,10 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
   // };
   return isNavbarOn ? (
     <div className="navbar--container">
-      <Button onClick={handleCloseNavbar}>
+      <Button className="close--btn" onClick={handleCloseNavbar}>
         <TfiClose />
       </Button>
-      <Menu>
+      <Menu className="menu--container">
         <MenuButton onClick={handleFeatureClick}>
           Feature{" "}
           {isFeatureOn ? (
@@ -79,11 +81,31 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
             ))}
           </ul>
         </MenuDropdown>
-        <Button onClick={() => console.log("careers clicked")}>Careers</Button>
-        <Button onClick={() => console.log("about clicked")}>About</Button>
+        <Button
+          className="menu--btn"
+          onClick={() => console.log("careers clicked")}
+        >
+          Careers
+        </Button>
+        <Button
+          className="menu--btn"
+          onClick={() => console.log("about clicked")}
+        >
+          About
+        </Button>
       </Menu>
-      <Button onClick={() => console.log("login clicked")}>Login</Button>
-      <Button onClick={() => console.log("register clicked")}>Register</Button>
+      <Button
+        className="login--btn action--btn"
+        onClick={() => console.log("login clicked")}
+      >
+        Login
+      </Button>
+      <Button
+        className="register--btn action--btn"
+        onClick={() => console.log("register clicked")}
+      >
+        Register
+      </Button>
     </div>
   ) : null;
 };

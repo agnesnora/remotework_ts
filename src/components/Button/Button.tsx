@@ -6,7 +6,7 @@ import { FC } from "react";
 //Making button a Functional component
 
 interface ButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
   children: ReactNode;
   className: string;
 }

@@ -1,0 +1,42 @@
+.navbar--container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+.navbar--container .close--btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin: 0.65em 0.65em 0.65em auto;
+  font-size: 1.8rem;
+}
+.navbar--container .menu--container {
+  padding-left: 1em;
+  color: #686868;
+}
+.navbar--container .menu--container button {
+  background-color: transparent;
+  border: none;
+  line-height: 1.625;
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+  display: block;
+}
+.action--btn {
+  display: block;
+  margin: 1em auto;
+  font-size: 1rem;
+  background-color: transparent;
+  padding: 0.8em 1.5em;
+  width: 78%;
+  border: none;
+}
+
+.register--btn {
+  border: 1px solid #686868;
+  border-radius: 15px;
+}/*# sourceMappingURL=Navbar.css.map */
