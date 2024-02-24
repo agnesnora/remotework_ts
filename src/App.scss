@@ -5,3 +5,18 @@ body {
 button {
   font-family: "Epilogue", sans-serif;
 }
+
+.app--container {
+  position: relative;
+
+  &.overlay--visible::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 65%; /* Width of the Navbar, adjust accordingly */
+    width: 35%; /* Width of the remaining content */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Greyish translucent color */
+    z-index: 2;
+  }
+}

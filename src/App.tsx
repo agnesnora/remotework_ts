@@ -16,9 +16,11 @@ const App: FC = () => {
   };
   return (
     <>
-      <Header handleOpenNavbar={handleOpenNavbar} />
-      <Navbar handleCloseNavbar={handleCloseNavbar} isNavbarOn={isNavbarOn} />
-      <MainSection />
+      <div className={`app--container ${isNavbarOn ? "overlay--visible" : ""}`}>
+        <Header handleOpenNavbar={handleOpenNavbar} />
+        <Navbar handleCloseNavbar={handleCloseNavbar} isNavbarOn={isNavbarOn} />
+        <MainSection />
+      </div>
     </>
   );
 };
