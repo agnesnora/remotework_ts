@@ -4,6 +4,10 @@ export interface DropdownItem {
   text: string;
   icon?: ReactNode;
 }
+
+export interface ImageItems {
+  src: string;
+}
 const featuresArray: DropdownItem[] = [
   {
     text: "Todo List",
@@ -91,4 +95,12 @@ const companyArray: DropdownItem[] = [
     text: "Blog",
   },
 ];
-export { featuresArray, companyArray };
+
+const companyImagesArray: ImageItems[] = [
+  { src: "../public/client-databiz.svg" },
+  { src: "../public/client-audiophile.svg" },
+  { src: "../public/client-meet.svg" },
+  { src: "../public/client-maker.svg" },
+];
+
+export { featuresArray, companyArray, companyImagesArray };
