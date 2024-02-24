@@ -19,4 +19,15 @@ button {
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Greyish translucent color */
   z-index: 2;
+}
+
+.company--list {
+  margin: 3em auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company--list img {
+  margin: 0 1em;
 }/*# sourceMappingURL=App.css.map */
