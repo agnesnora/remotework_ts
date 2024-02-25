@@ -1,10 +1,7 @@
 .hero {
   height: 100vh;
 }
-.hero .hero--background--img {
-  background-image: url("/image-hero-mobile.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.hero .hero--img {
   margin: 0 auto;
   width: 100%;
   height: 50%;
@@ -35,37 +32,81 @@
   font-size: 1.1rem;
 }
 
+@media (min-width: 500px) {
+  .hero {
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    max-width: 90%;
+  }
+  .hero .hero--img {
+    margin-left: 2em;
+    height: 80vh;
+    background-position: right;
+    order: 2;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero .hero--left {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .hero--left .hero--content {
+    text-align: left;
+    flex: 1;
+  }
+  .hero .hero--left .hero--content h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+  .hero .hero--left .hero--content p {
+    width: 80%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .hero .hero--left .hero--content button {
+    margin-left: 0;
+  }
+}
 @media (min-width: 800px) {
   .hero {
-    padding: 1.5em;
-    display: flex;
-  }
-  .hero .hero--background--img {
-    background-image: url("/image-hero-desktop.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    padding: 1em;
     margin: 0 auto;
-    min-width: 40%;
-    height: 100%;
+    display: flex;
+    min-width: 600px;
+    max-width: 80%;
+  }
+  .hero .hero--img {
+    margin-left: 2em;
+    max-width: 50%;
+    height: 80vh;
     background-position: right;
     order: 2;
   }
-  .hero .hero--content {
-    padding: 0 2em;
-    text-align: left;
+  .hero .hero--left {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
   }
-  .hero .hero--content h1 {
+  .hero .hero--left .hero--content {
+    text-align: left;
+    flex: 1;
+  }
+  .hero .hero--left .hero--content h1 {
     font-size: 5em;
     font-weight: 900;
     line-height: 1.2;
+    margin-top: 0;
   }
-  .hero .hero--content p {
-    width: 60%;
+  .hero .hero--left .hero--content p {
     font-size: 1.125em;
     margin-left: 0;
     padding-left: 0;
   }
-  .hero .hero--content button {
+  .hero .hero--left .hero--content button {
     margin-left: 0;
   }
 }/*# sourceMappingURL=MainSection.css.map */

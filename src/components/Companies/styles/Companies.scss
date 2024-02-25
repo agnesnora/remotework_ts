@@ -1,9 +1,16 @@
+@media (min-width: 500px) {
+  .company--list img {
+    max-width: 70px;
+  }
+}
+
 @media (min-width: 800px) {
   .company--list {
-    margin-left: 0;
+    // margin-left: 0;
     padding-left: 0;
     justify-content: start;
-    margin-top: 4rem;
+    margin: auto 1em 0 1em;
+    // margin-top: auto;
     img {
       max-width: 90px;
     }

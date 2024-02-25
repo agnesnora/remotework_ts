@@ -11,17 +11,31 @@ interface MainSectionProps {
 export const MainSection: FC<MainSectionProps> = ({ innerWidth }) => {
   return (
     <div className="hero">
-      {/* <img className="hero--img" src="../../../public/image-hero-mobile.png" /> */}
-      <div className="hero--background--img"></div>
-      <div className="hero--content">
-        <h1>Make {innerWidth > 800 ? <br></br> : null}remote work</h1>
+      <img className="hero--img" src="../../../public/image-hero-mobile.png" />
+      {/* <div className="hero--background--img"></div> */}
+      <div className="hero--left">
+        <div className="hero--content">
+          {" "}
+          <h1>Make {innerWidth > 800 ? <br></br> : null}remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <Button
+            className="main--btn"
+            onClick={() => console.log("learn more")}
+          >
+            Learn more
+          </Button>
+        </div>
+        {/* <h1>Make {innerWidth > 800 ? <br></br> : null}remote work</h1>
         <p>
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
         <Button className="main--btn" onClick={() => console.log("learn more")}>
           Learn more
-        </Button>
+        </Button> */}
         {innerWidth > 800 ? (
           <Companies className="company--list">
             {companyImagesArray.map((image) => (
