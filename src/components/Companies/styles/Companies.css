@@ -1,0 +1,11 @@
+@media (min-width: 800px) {
+  .company--list {
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: start;
+    margin-top: 4rem;
+  }
+  .company--list img {
+    max-width: 90px;
+  }
+}/*# sourceMappingURL=Companies.css.map */

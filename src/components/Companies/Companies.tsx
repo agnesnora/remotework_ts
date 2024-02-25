@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-
+import "./styles/Companies.css";
 interface CompaniesProps {
   children: ReactNode;
   //   src: string;

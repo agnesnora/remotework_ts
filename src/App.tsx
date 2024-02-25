@@ -42,7 +42,7 @@ const App: FC = () => {
             handleCloseNavbar={handleCloseNavbar}
             isNavbarOn={isNavbarOn}
           />
-          <MainSection />
+          <MainSection innerWidth={windowWidth} />
           <Companies className="company--list">
             {companyImagesArray.map((image) => (
               <img src={image.src} />
@@ -55,7 +55,7 @@ const App: FC = () => {
             innerWidth={windowWidth}
             handleOpenNavbar={handleOpenNavbar}
           />
-          <MainSection />
+          <MainSection innerWidth={windowWidth} />
         </div>
       )}
       {/* <div className={`app--container ${isNavbarOn ? "overlay--visible" : ""}`}>
