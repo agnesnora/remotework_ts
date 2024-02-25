@@ -4,3 +4,15 @@
   justify-content: space-between;
   padding: 1.5rem 1rem;
 }
+@media (min-width: 800px) {
+  .screen--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 1rem;
+    img {
+      width: 83px;
+    }
+  }
+}

@@ -53,3 +53,22 @@
   border: 1px solid $mediumGrey;
   border-radius: 15px;
 }
+@media (min-width: 800px) {
+  .navbar--container {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 4em;
+    .menu--container {
+      display: flex;
+      padding-left: 0;
+      button {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .action--btn--container {
+    display: flex;
+  }
+}

@@ -17,9 +17,10 @@ import { TfiClose } from "react-icons/tfi";
 interface NavbarProps {
   onClick?: () => void;
   // children: ReactNode;
-  handleCloseNavbar: () => void;
+  handleCloseNavbar?: () => void;
+  innerWidth: number;
 
-  isNavbarOn: boolean;
+  isNavbarOn?: boolean;
 }
 
 export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
@@ -38,9 +39,14 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
   // };
   return isNavbarOn ? (
     <div className="navbar--container">
-      <Button className="close--btn" onClick={handleCloseNavbar}>
-        <TfiClose />
-      </Button>
+      {innerWidth < 800 ? (
+        <Button className="close--btn" onClick={handleCloseNavbar}>
+          <TfiClose />
+        </Button>
+      ) : (
+        ""
+      )}
+
       <Menu className="menu--container">
         <MenuButton onClick={handleFeatureClick}>
           Feature{" "}
@@ -98,18 +104,21 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
           About
         </Button>
       </Menu>
-      <Button
-        className="login--btn action--btn"
-        onClick={() => console.log("login clicked")}
-      >
-        Login
-      </Button>
-      <Button
-        className="register--btn action--btn"
-        onClick={() => console.log("register clicked")}
-      >
-        Register
-      </Button>
+      <div className="action--btn--container">
+        {" "}
+        <Button
+          className="login--btn action--btn"
+          onClick={() => console.log("login clicked")}
+        >
+          Login
+        </Button>
+        <Button
+          className="register--btn action--btn"
+          onClick={() => console.log("register clicked")}
+        >
+          Register
+        </Button>
+      </div>
     </div>
   ) : null;
 };

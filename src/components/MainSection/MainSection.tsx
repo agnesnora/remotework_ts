@@ -3,7 +3,8 @@ import "./styles/MainSection.css";
 export const MainSection = () => {
   return (
     <div className="hero">
-      <img className="hero--img" src="../../../public/image-hero-mobile.png" />
+      {/* <img className="hero--img" src="../../../public/image-hero-mobile.png" /> */}
+      <div className="hero--background--img"></div>
       <div className="hero--content">
         <h1>Make remote work</h1>
         <p>

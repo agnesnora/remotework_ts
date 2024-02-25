@@ -97,10 +97,10 @@ const companyArray: DropdownItem[] = [
 ];
 
 const companyImagesArray: ImageItems[] = [
-  { src: "../public/client-databiz.svg" },
-  { src: "../public/client-audiophile.svg" },
-  { src: "../public/client-meet.svg" },
-  { src: "../public/client-maker.svg" },
+  { src: "/client-databiz.svg" },
+  { src: "/client-audiophile.svg" },
+  { src: "/client-meet.svg" },
+  { src: "/client-maker.svg" },
 ];
 
 export { featuresArray, companyArray, companyImagesArray };
