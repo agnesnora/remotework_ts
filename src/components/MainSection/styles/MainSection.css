@@ -67,7 +67,6 @@
   }
   .hero .hero--left .hero--content {
     text-align: left;
-    flex: 1;
   }
   .hero .hero--left .hero--content h1 {
     font-size: 4em;
@@ -92,7 +91,6 @@
     max-width: 80%;
   }
   .hero .hero--img {
-    order: 2;
     height: 638px;
     width: 515px;
     -o-object-fit: cover;
@@ -104,7 +102,6 @@
     flex-direction: column;
   }
   .hero .hero--left .hero--content {
-    text-align: left;
     flex: 1;
   }
   .hero .hero--left .hero--content h1 {

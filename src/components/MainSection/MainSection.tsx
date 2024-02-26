@@ -35,14 +35,14 @@ export const MainSection: FC<MainSectionProps> = ({ innerWidth }) => {
           >
             Learn more
           </Button>
-          {innerWidth > 1300 ? (
-            <Companies className="company--list">
-              {companyImagesArray.map((image) => (
-                <img src={image.src} />
-              ))}
-            </Companies>
-          ) : null}
         </div>
+        {innerWidth > 1300 ? (
+          <Companies className="company--list">
+            {companyImagesArray.map((image) => (
+              <img src={image.src} />
+            ))}
+          </Companies>
+        ) : null}
       </div>{" "}
       {/* {innerWidth < 1300 ? (
         <Companies className="company--list">

@@ -12,4 +12,9 @@
   .company--list img {
     max-width: 90px;
   }
+}
+@media (min-width: 1024px) and (min-width: 1300px) {
+  .company--list {
+    margin: auto 1em 0 1em;
+  }
 }/*# sourceMappingURL=Companies.css.map */

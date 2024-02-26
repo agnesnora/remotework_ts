@@ -91,14 +91,8 @@
     min-width: 600px;
     max-width: 80%;
     .hero--img {
-      // background-image: url("/image-hero-desktop.png");
-      // background-size: cover;
-      // margin-left: 2em;
-      // max-width: 50%;
-      // height: 80vh;
-      // background-position: right;
       order: 2;
-      height: 638px;
+      // height: 638px;
       width: 515px;
       object-fit: cover;
       // padding: 1em;
@@ -110,7 +104,6 @@
       .hero--content {
         // padding: 0 2em;
         text-align: left;
-        flex: 1;
 
         h1 {
           font-size: 4em;
@@ -141,18 +134,15 @@
     // min-width: 600px;
     max-width: 80%;
     .hero--img {
-      order: 2;
       height: 638px;
       width: 515px;
       object-fit: cover;
-      // padding: 1em;
     }
     .hero--left {
       height: 638px;
       display: flex;
       flex-direction: column;
       .hero--content {
-        text-align: left;
         flex: 1;
 
         h1 {

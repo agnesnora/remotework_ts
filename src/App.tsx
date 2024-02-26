@@ -37,11 +37,13 @@ const App: FC = () => {
           isNavbarOn={isNavbarOn}
         />
         <MainSection innerWidth={windowWidth} />
-        <Companies className="company--list">
-          {companyImagesArray.map((image) => (
-            <img src={image.src} />
-          ))}
-        </Companies>
+        {innerWidth < 1300 ? (
+          <Companies className="company--list">
+            {companyImagesArray.map((image) => (
+              <img src={image.src} />
+            ))}
+          </Companies>
+        ) : null}
       </div>
     </>
   );
