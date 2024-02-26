@@ -9,6 +9,8 @@
 }
 .menu--dropdown ul li:hover {
   background-color: #edd556;
+  border-radius: 18px;
+  border: none;
 }
 .menu--dropdown ul li a {
   text-decoration: none;

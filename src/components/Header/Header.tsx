@@ -1,8 +1,7 @@
 import { FC } from "react";
 import "./styles/Header.css";
 import { Navbar } from "../Navbar/Navbar";
-import { Menu } from "../Menu/Menu";
-import { MenuButton } from "../Menu/MenuButton";
+
 interface HeaderProps {
   handleOpenNavbar: () => void;
   innerWidth: number;
@@ -27,10 +26,8 @@ export const Header: FC<HeaderProps> = ({ handleOpenNavbar }) => {
           fill="#151515"
         />
       </svg>
-      {/* <img className="logo" src="/public/logo.svg" /> */}
-      {/* <Menu><MenuButton></MenuButton></Menu> */}
+
       <Navbar isNavbarOn={true} />
-      {/* <img src="../../../public/icon-menu.svg" onClick={handleOpenNavbar} /> */}
     </header>
   );
 };

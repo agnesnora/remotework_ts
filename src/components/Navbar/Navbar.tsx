@@ -16,10 +16,8 @@ import { TfiClose } from "react-icons/tfi";
 
 interface NavbarProps {
   onClick?: () => void;
-  // children: ReactNode;
   handleCloseNavbar?: () => void;
-  innerWidth: number;
-
+  innerWidth?: number;
   isNavbarOn?: boolean;
 }
 
@@ -27,13 +25,6 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
   const [isFeatureOn, setFeatureOn] = useState<boolean>(false);
   const [isCompanyOn, setCompanyOn] = useState<boolean>(false);
 
-  // const handleFeatureClick = () => {
-  //   setFeatureOn((prevOn) => !prevOn)
-  //   ;
-  // };
-  // const handleCompanyClick = () => {
-  //   setCompanyOn((prevOn) => !prevOn);
-  // };
   const handleFeatureClick = () => {
     setFeatureOn(isFeatureOn ? false : true);
     setCompanyOn(false);
@@ -43,9 +34,6 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
     setFeatureOn(false);
   };
 
-  // const handleNavbarOpenClose = () => {
-  //   setIsNavbarOn((prevOn) => !prevOn);
-  // };
   return isNavbarOn ? (
     <div className="navbar--container">
       {innerWidth < 800 ? (
