@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   font-family: "Epilogue", sans-serif;
+  background-color: #f2f2f2;
 }
 
 button {
@@ -25,7 +26,7 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 1em;
-  margin: 0 auto;
+  margin: 3em auto;
   text-align: center;
   justify-items: center;
   align-items: center;

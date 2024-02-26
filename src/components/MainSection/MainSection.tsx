@@ -11,12 +11,20 @@ interface MainSectionProps {
 export const MainSection: FC<MainSectionProps> = ({ innerWidth }) => {
   return (
     <div className="hero">
-      <img className="hero--img" src="../../../public/image-hero-mobile.png" />
+      {" "}
+      <img
+        className="hero--img"
+        src={
+          innerWidth < 800
+            ? "/image-hero-mobile.png"
+            : "/image-hero-desktop.png"
+        }
+      />
       {/* <div className="hero--background--img"></div> */}
       <div className="hero--left">
         <div className="hero--content">
           {" "}
-          <h1>Make {innerWidth > 800 ? <br></br> : null}remote work</h1>
+          <h1>Make {innerWidth > 1024 ? <br></br> : null}remote work</h1>
           <p>
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
@@ -27,23 +35,22 @@ export const MainSection: FC<MainSectionProps> = ({ innerWidth }) => {
           >
             Learn more
           </Button>
+          {innerWidth > 1300 ? (
+            <Companies className="company--list">
+              {companyImagesArray.map((image) => (
+                <img src={image.src} />
+              ))}
+            </Companies>
+          ) : null}
         </div>
-        {/* <h1>Make {innerWidth > 800 ? <br></br> : null}remote work</h1>
-        <p>
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <Button className="main--btn" onClick={() => console.log("learn more")}>
-          Learn more
-        </Button> */}
-        {innerWidth > 800 ? (
-          <Companies className="company--list">
-            {companyImagesArray.map((image) => (
-              <img src={image.src} />
-            ))}
-          </Companies>
-        ) : null}
-      </div>
+      </div>{" "}
+      {/* {innerWidth < 1300 ? (
+        <Companies className="company--list">
+          {companyImagesArray.map((image) => (
+            <img src={image.src} />
+          ))}
+        </Companies>
+      ) : null} */}
     </div>
   );
 };

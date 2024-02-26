@@ -1,9 +1,12 @@
+@import "./help/variables.scss";
+
 body {
   margin: 0 auto;
-  font-family: "Epilogue", sans-serif;
+  font-family: $fontFamily;
+  background-color: $backgroundWhite;
 }
 button {
-  font-family: "Epilogue", sans-serif;
+  font-family: $fontFamily;
 }
 
 .app--container {
@@ -24,7 +27,7 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 1em;
-  margin: 0 auto;
+  margin: 3em auto;
   text-align: center;
   justify-items: center;
   align-items: center;
@@ -33,4 +36,10 @@ button {
   img {
     max-width: 50px;
   }
+}
+
+@media (min-width: 800px) {
+  // .app--container {
+  //   padding: 2em 3em;
+  // }
 }

@@ -29,45 +29,20 @@ const App: FC = () => {
   };
   return (
     <>
-      {windowWidth < 800 ? (
-        <div
-          className={`app--container ${isNavbarOn ? "overlay--visible" : ""}`}
-        >
-          <Header
-            innerWidth={windowWidth}
-            handleOpenNavbar={handleOpenNavbar}
-          />
-          <Navbar
-            innerWidth={windowWidth}
-            handleCloseNavbar={handleCloseNavbar}
-            isNavbarOn={isNavbarOn}
-          />
-          <MainSection innerWidth={windowWidth} />
-          <Companies className="company--list">
-            {companyImagesArray.map((image) => (
-              <img src={image.src} />
-            ))}
-          </Companies>
-        </div>
-      ) : (
-        <div>
-          <Header
-            innerWidth={windowWidth}
-            handleOpenNavbar={handleOpenNavbar}
-          />
-          <MainSection innerWidth={windowWidth} />
-        </div>
-      )}
-      {/* <div className={`app--container ${isNavbarOn ? "overlay--visible" : ""}`}>
-        <Header handleOpenNavbar={handleOpenNavbar} />
-        <Navbar handleCloseNavbar={handleCloseNavbar} isNavbarOn={isNavbarOn} />
-        <MainSection />
+      <div className={`app--container ${isNavbarOn ? "overlay--visible" : ""}`}>
+        <Header innerWidth={windowWidth} handleOpenNavbar={handleOpenNavbar} />
+        <Navbar
+          innerWidth={windowWidth}
+          handleCloseNavbar={handleCloseNavbar}
+          isNavbarOn={isNavbarOn}
+        />
+        <MainSection innerWidth={windowWidth} />
         <Companies className="company--list">
           {companyImagesArray.map((image) => (
             <img src={image.src} />
           ))}
         </Companies>
-      </div> */}
+      </div>
     </>
   );
 };
