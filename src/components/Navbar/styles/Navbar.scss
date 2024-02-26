@@ -28,6 +28,10 @@
       margin-bottom: 1.2em;
       font-size: 1rem;
       display: block;
+      cursor: pointer;
+      &:hover {
+        color: $black;
+      }
     }
     .dropdown--btn {
       display: flex;
@@ -47,12 +51,17 @@
   padding: 0.8em 1.5em;
   width: 78%;
   border: none;
+  color: $mediumGrey;
+  &:hover {
+    color: $black;
+  }
 }
 
 .register--btn {
   border: 1px solid $mediumGrey;
   border-radius: 15px;
 }
+
 @media (min-width: 850px) {
   .navbar--container {
     display: flex;
@@ -68,9 +77,6 @@
         margin-bottom: 0;
         margin-left: 1em;
       }
-      // .features--btn {
-      //   margin-left: 0;
-      // }
     }
   }
   .action--btn--container {

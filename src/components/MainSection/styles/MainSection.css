@@ -28,6 +28,12 @@
   border-radius: 18px;
   border: none;
   font-size: 1.1rem;
+  cursor: pointer;
+}
+.hero .hero--content button:hover {
+  color: #151515;
+  background-color: transparent;
+  border: 1px solid #151515;
 }
 
 @media (min-width: 800px) {

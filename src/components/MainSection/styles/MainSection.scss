@@ -35,6 +35,12 @@
       border-radius: 18px;
       border: none;
       font-size: 1.1rem;
+      cursor: pointer;
+      &:hover {
+        color: $black;
+        background-color: transparent;
+        border: 1px solid $black;
+      }
     }
   }
 }

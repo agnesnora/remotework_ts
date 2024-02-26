@@ -7,6 +7,9 @@
   align-items: center;
   padding: 0.7em;
 }
+.menu--dropdown ul li:hover {
+  background-color: #edd556;
+}
 .menu--dropdown ul li a {
   text-decoration: none;
   color: #686868;

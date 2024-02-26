@@ -3,6 +3,15 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 1rem;
+  .sandwich--menu {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 700px) {
+  .mobile--header {
+    padding: 2em 3em;
+  }
 }
 @media (min-width: 850px) {
   .screen--header {
