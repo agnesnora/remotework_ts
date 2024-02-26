@@ -48,49 +48,54 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
       )}
 
       <Menu className="menu--container">
-        <MenuButton onClick={handleFeatureClick}>
-          Feature{" "}
-          {isFeatureOn ? (
-            <MdOutlineKeyboardArrowUp className="arrow--icon" />
-          ) : (
-            <MdOutlineKeyboardArrowDown className="arrow--icon" />
-          )}
-        </MenuButton>
-        <MenuDropdown
-          className="menu--dropdown"
-          data-testid="dropdown"
-          isFeatureOn={isFeatureOn}
-        >
-          <ul data-testid="features-dropdown">
-            {featuresArray.map((feature) => (
-              <MenuItem key={feature.text}>
-                <li>
-                  {feature.icon}
-                  <a href="#">{feature.text}</a>
-                </li>
-              </MenuItem>
-            ))}
-          </ul>
-        </MenuDropdown>
-        <MenuButton onClick={handleCompanyClick}>
-          Company{" "}
-          {isCompanyOn ? (
-            <MdOutlineKeyboardArrowUp className="arrow--icon" />
-          ) : (
-            <MdOutlineKeyboardArrowDown className="arrow--icon" />
-          )}
-        </MenuButton>
-        <MenuDropdown className="menu--dropdown" isCompanyOn={isCompanyOn}>
-          <ul data-testid="company-dropdown">
-            {companyArray.map((item) => (
-              <MenuItem key={item.text}>
-                <li>
-                  <a>{item.text}</a>
-                </li>
-              </MenuItem>
-            ))}
-          </ul>
-        </MenuDropdown>
+        <div className="dropdown--container">
+          <MenuButton onClick={handleFeatureClick}>
+            Feature{" "}
+            {isFeatureOn ? (
+              <MdOutlineKeyboardArrowUp className="arrow--icon" />
+            ) : (
+              <MdOutlineKeyboardArrowDown className="arrow--icon" />
+            )}
+          </MenuButton>
+          <MenuDropdown
+            className="menu--dropdown"
+            data-testid="dropdown"
+            isFeatureOn={isFeatureOn}
+          >
+            <ul data-testid="features-dropdown">
+              {featuresArray.map((feature) => (
+                <MenuItem key={feature.text}>
+                  <li>
+                    {feature.icon}
+                    <a href="#">{feature.text}</a>
+                  </li>
+                </MenuItem>
+              ))}
+            </ul>
+          </MenuDropdown>
+        </div>
+        <div className="dropdown--container">
+          <MenuButton onClick={handleCompanyClick}>
+            Company{" "}
+            {isCompanyOn ? (
+              <MdOutlineKeyboardArrowUp className="arrow--icon" />
+            ) : (
+              <MdOutlineKeyboardArrowDown className="arrow--icon" />
+            )}
+          </MenuButton>
+          <MenuDropdown className="menu--dropdown" isCompanyOn={isCompanyOn}>
+            <ul data-testid="company-dropdown">
+              {companyArray.map((item) => (
+                <MenuItem key={item.text}>
+                  <li>
+                    <a>{item.text}</a>
+                  </li>
+                </MenuItem>
+              ))}
+            </ul>
+          </MenuDropdown>
+        </div>
+
         <Button
           className="menu--btn"
           onClick={() => console.log("careers clicked")}

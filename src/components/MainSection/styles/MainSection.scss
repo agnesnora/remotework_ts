@@ -53,6 +53,9 @@
       object-fit: contain;
       // padding: 1em;
     }
+    h1 {
+      margin-top: 1em;
+    }
     // .hero--left {
     //   height: 80vh;
     //   display: flex;
@@ -109,7 +112,7 @@
           font-size: 4em;
           font-weight: 900;
           line-height: 1.2;
-          margin-top: 0;
+          margin-top: 0.5em;
         }
 
         p {
@@ -147,9 +150,6 @@
 
         h1 {
           font-size: 5em;
-          font-weight: 900;
-          line-height: 1.2;
-          margin-top: 0;
         }
 
         p {

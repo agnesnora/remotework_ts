@@ -17,3 +17,20 @@
     }
   }
 }
+@media (min-width: 800px) {
+  .dropdown--container {
+    position: relative;
+  }
+  .menu--dropdown {
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 100;
+    z-index: 1;
+    border-radius: 19px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    ul {
+      padding: 1em 2em;
+    }
+  }
+}

@@ -4,6 +4,7 @@ body {
   margin: 0 auto;
   font-family: $fontFamily;
   background-color: $backgroundWhite;
+  box-sizing: border-box;
 }
 button {
   font-family: $fontFamily;
@@ -34,7 +35,7 @@ button {
   padding: 0 2em;
 
   img {
-    max-width: 50px;
+    max-width: 65px;
   }
 }
 

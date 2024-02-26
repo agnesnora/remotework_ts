@@ -44,6 +44,9 @@
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .hero h1 {
+    margin-top: 1em;
+  }
 }
 @media (min-width: 1024px) {
   .hero {
@@ -55,7 +58,6 @@
   }
   .hero .hero--img {
     order: 2;
-    height: 638px;
     width: 515px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -72,7 +74,7 @@
     font-size: 4em;
     font-weight: 900;
     line-height: 1.2;
-    margin-top: 0;
+    margin-top: 0.5em;
   }
   .hero .hero--left .hero--content p {
     font-size: 1.125em;
@@ -106,9 +108,6 @@
   }
   .hero .hero--left .hero--content h1 {
     font-size: 5em;
-    font-weight: 900;
-    line-height: 1.2;
-    margin-top: 0;
   }
   .hero .hero--left .hero--content p {
     font-size: 1.125em;
