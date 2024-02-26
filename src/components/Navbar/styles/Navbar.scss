@@ -53,7 +53,7 @@
   border: 1px solid $mediumGrey;
   border-radius: 15px;
 }
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .navbar--container {
     display: flex;
     position: static;
@@ -66,11 +66,11 @@
       padding-left: 0;
       button {
         margin-bottom: 0;
-        margin-left: 3em;
-        &:first-child {
-          margin-left: 0.5em;
-        }
+        margin-left: 1em;
       }
+      // .features--btn {
+      //   margin-left: 0;
+      // }
     }
   }
   .action--btn--container {

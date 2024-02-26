@@ -8,6 +8,8 @@ import { FC } from "react";
 interface ButtonProps {
   onClick: () => void;
   children: ReactNode;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 const DropdownButton: FC<ButtonProps> = (props) => {

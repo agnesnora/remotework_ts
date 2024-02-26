@@ -51,7 +51,7 @@
   border-radius: 15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .navbar--container {
     display: flex;
     position: static;
@@ -66,10 +66,7 @@
   }
   .navbar--container .menu--container button {
     margin-bottom: 0;
-    margin-left: 3em;
-  }
-  .navbar--container .menu--container button:first-child {
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
   .action--btn--container {
     display: flex;

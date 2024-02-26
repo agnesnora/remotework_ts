@@ -27,11 +27,20 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
   const [isFeatureOn, setFeatureOn] = useState<boolean>(false);
   const [isCompanyOn, setCompanyOn] = useState<boolean>(false);
 
+  // const handleFeatureClick = () => {
+  //   setFeatureOn((prevOn) => !prevOn)
+  //   ;
+  // };
+  // const handleCompanyClick = () => {
+  //   setCompanyOn((prevOn) => !prevOn);
+  // };
   const handleFeatureClick = () => {
-    setFeatureOn((prevOn) => !prevOn);
+    setFeatureOn(isFeatureOn ? false : true);
+    setCompanyOn(false);
   };
   const handleCompanyClick = () => {
-    setCompanyOn((prevOn) => !prevOn);
+    setCompanyOn(isCompanyOn ? false : true);
+    setFeatureOn(false);
   };
 
   // const handleNavbarOpenClose = () => {
@@ -49,7 +58,11 @@ export const Navbar: FC<NavbarProps> = ({ isNavbarOn, handleCloseNavbar }) => {
 
       <Menu className="menu--container">
         <div className="dropdown--container">
-          <MenuButton onClick={handleFeatureClick}>
+          <MenuButton
+            className="features--btn"
+            isFeatureOn={isFeatureOn}
+            onClick={handleFeatureClick}
+          >
             Feature{" "}
             {isFeatureOn ? (
               <MdOutlineKeyboardArrowUp className="arrow--icon" />

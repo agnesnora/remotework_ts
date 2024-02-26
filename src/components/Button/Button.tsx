@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   children: ReactNode;
   className: string;
+  style?: React.CSSProperties;
 }
 
 const Button: FC<ButtonProps> = ({ onClick, children, className }) => {
