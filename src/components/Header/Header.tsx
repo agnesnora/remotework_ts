@@ -11,10 +11,10 @@ interface HeaderProps {
 export const Header: FC<HeaderProps> = ({ handleOpenNavbar }) => {
   return innerWidth < 850 ? (
     <header className="mobile--header">
-      <img className="logo" src="/public/logo.svg" />
+      <img className="logo" src="/logo.svg" />
       <img
         className="sandwich--menu"
-        src="/public/icon-menu.svg"
+        src="/icon-menu.svg"
         onClick={handleOpenNavbar}
       />
     </header>
